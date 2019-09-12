@@ -1,3 +1,5 @@
+#define _GNU_SOURCE
+
 #include <stdint.h>
 #include <signal.h>
 #include "init.h"
