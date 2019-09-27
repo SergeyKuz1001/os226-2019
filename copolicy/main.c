@@ -14,7 +14,7 @@ void app1(void *aspace) {
 	--as->cnt;
 	printf("%s id %d cnt %d\n", __func__, as->id, as->cnt);
 
-	if (as->cnt % 1) {
+	if (as->cnt % 2) {
 		sched_time_elapsed(1);
 	}
 
