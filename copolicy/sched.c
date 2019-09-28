@@ -31,7 +31,6 @@ void sched_new(void (*entrypoint)(void *aspace), void *aspace, int priority, int
 
 void sched_cont(void (*entrypoint)(void *aspace), void *aspace, int timeout) {
     running_app->func = entrypoint;
-	running_app->aspace = aspace;
     running_app->time_continue = time + timeout;
 }
 
